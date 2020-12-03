@@ -1,0 +1,155 @@
+body {
+	font-family: 'Epilogue', sans-serif;
+	margin: 0;
+	color: white;
+}
+
+h1, h2, h3, p{
+	margin: 0;
+	border: 0;
+}
+
+											/*Hero Section*/
+.hero {
+	background-image: linear-gradient(120deg, rgba(128, 0, 128, 0.4) 0%, rgba(255, 0, 0, 0.4) 100%), url(images/musica.png);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+
+.crown{
+	width: 180px;
+	height: 60px;
+	padding-top: 15px;
+	padding-left: 150px;
+}
+.hero h1 {
+	color: #ff0153;
+	font-size: 57px;
+	font-weight: 900;
+	padding-left: 50px;
+}
+
+.subtitle {
+	font-size: 21px;
+	opacity: 0.8;
+	padding: 10px 0px 0px 50px;
+	width: 372px;
+}
+				/*Codigo responsivo del Hero*/
+@media (max-width: 510px) {
+	.hero {
+		text-align: center;
+		height: 650px;
+	}
+	.crown{
+		padding-left: 0px;
+	}
+	.hero h1 {
+		padding-left: 0px;
+	}
+	
+	.subtitle {
+		padding-top: 10px;
+		padding-left: 0px;
+		width: auto;
+	}
+}
+
+				/*SubHero dentro del Hero con el Call to Action*/
+.subhero {
+	text-align: center;
+	padding-top: 170px;
+}
+
+.subhero h2{
+	font-size: 25px;
+	font-weight: 500;
+	opacity: 0.9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+@media (max-width: 205px) {
+	.subhero {
+		padding-top: 80px;
+	}
+}
+
+											/*Middle Section*/
+.middle-section { /*Doy el fondo en este section para que ocupe el margin del container*/
+	background-image: linear-gradient(0, purple, #c2003e);
+	text-align: center;
+}
+
+.container { /*Width responsivo respecto a las cartas y margin que centra las cartas*/
+	width: fit-content;
+	margin: auto;
+}
+
+.middle-section h2 {
+	font-size: 25px;
+	font-weight: 500;
+	opacity: 0.85;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.cards-container { 
+	display: grid;
+	grid-gap: 80px;
+}
+
+@media (min-width: 0px) {
+	.cards-container { grid-template-columns: 1fr;}
+}
+
+@media (min-width: 700px) {
+	.cards-container { grid-template-columns: 1fr 1fr;}
+}
+
+@media (min-width: 1000px) {
+	.cards-container { grid-template-columns: 1fr 1fr 1fr;}
+}
+
+.cards-container p { /*Llevo el nombre del genero al fondo de la carta*/
+	text-align: center;
+	padding-top: 555px;
+}
+
+.card1 {
+	background-image: linear-gradient(0, rgb(128 0 128 / 45%) 0%, rgb(255 120 120 / 20%) 100%), url(images/electronica.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 250px;
+	height: 600px;
+	border: 2px solid #f90b6e;
+}
+
+.card2 {
+	background-image: linear-gradient(0, rgba(128, 0, 128, 0.4) 0%, rgba(255, 0, 0, 0.4) 100%), url(images/rock.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 250px;
+	height: 600px;
+	border: 2px solid #f90b6e;
+}
+.card3 {
+	background-image: linear-gradient(0, rgba(128, 0, 128, 0.4) 0%, rgba(255, 0, 0, 0.4) 100%), url(images/jazz.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 250px;
+	height: 600px;
+	border: 2px solid #f90b6e;
+}
+
+											/*Footer Section*/
+footer {
+	background-color: #494949;
+	height: auto;
+}
+
+footer p{
+	padding: 18px;
+	color: #dedede;
+}
